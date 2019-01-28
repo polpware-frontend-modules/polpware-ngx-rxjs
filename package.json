@@ -1,0 +1,21 @@
+{
+  "name": "@polpware/ngx-rxjs",
+  "version": "7.0.0",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "main": "bundles/polpware-ngx-rxjs.umd.js",
+  "module": "fesm5/polpware-ngx-rxjs.js",
+  "es2015": "fesm2015/polpware-ngx-rxjs.js",
+  "esm5": "esm5/polpware-ngx-rxjs.js",
+  "esm2015": "esm2015/polpware-ngx-rxjs.js",
+  "fesm5": "fesm5/polpware-ngx-rxjs.js",
+  "fesm2015": "fesm2015/polpware-ngx-rxjs.js",
+  "typings": "polpware-ngx-rxjs.d.ts",
+  "metadata": "polpware-ngx-rxjs.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
