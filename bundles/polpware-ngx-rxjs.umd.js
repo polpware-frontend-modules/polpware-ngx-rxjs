@@ -7,10 +7,12 @@
     function toPromise(item) {
         return new Promise(function (resolve, reject) {
             var subscription = item.subscribe(function (elem) {
-                if (!subscription) {
-                    console.log('Something wrong');
-                }
-                subscription && subscription.unsubscribe();
+                // We cannot access subscription this early,
+                // at the initialization stage.
+                // Therefore, we schedule to unsubscribe this subscription.
+                setTimeout(function () {
+                    subscription && subscription.unsubscribe();
+                });
                 if (elem) {
                     resolve(elem);
                 }
@@ -18,7 +20,9 @@
                     reject(null);
                 }
             }, function (error) {
-                subscription && subscription.unsubscribe();
+                setTimeout(function () {
+                    subscription && subscription.unsubscribe();
+                });
                 reject(error);
             });
             if (!subscription) {
