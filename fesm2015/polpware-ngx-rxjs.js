@@ -1,15 +1,5 @@
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @template T
- * @param {?} item
- * @return {?}
- */
 function toPromise(item) {
     return new Promise((resolve, reject) => {
-        /** @type {?} */
         const subscription = item.subscribe(elem => {
             if (!subscription) {
                 console.log('Something wrong');
@@ -31,16 +21,13 @@ function toPromise(item) {
     });
 }
 
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+/*
+ * Public API Surface of ngx-rxjs
  */
 
 /**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 export { toPromise };
-
 //# sourceMappingURL=polpware-ngx-rxjs.js.map
